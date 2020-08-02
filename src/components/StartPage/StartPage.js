@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'reactstrap'
-import { Link, BrowserRouter as Router } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "./StartPage.scss"
 
 function StartPage({logo_url}) {
@@ -10,7 +10,7 @@ function StartPage({logo_url}) {
             <section className="main mt-md-5">
                         <div className="start-page--title">فرم نظرسنجی و ارتقا سطح خدمت رسانی </div>
                         <div className="logo d-none d-md-block mt-md-5">
-                            <img src={logo_url} />
+                            <img alt="logo placeholder" src={logo_url} />
                         </div>
 
                     <Link to="/Questions">

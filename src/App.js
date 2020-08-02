@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import StartPage from './components/StartPage/StartPage'
 import QuestionPage from './components/QuestionPage/QuestionPage'
 import FarewellPage from './components/FarawellPage/FarewellPage'
