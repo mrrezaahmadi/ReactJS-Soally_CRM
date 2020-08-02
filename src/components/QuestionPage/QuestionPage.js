@@ -4,7 +4,7 @@ import './QuestionPage.scss'
 import { Redirect } from 'react-router-dom'
 import MyStepper from '../Stepper/Stepper'
 
-function QuestionPage({ initialData }) {
+function QuestionPage({ initialData, setResult, result }) {
 
     function getSteps() {
         return initialData.questions.map(question => '');
@@ -13,7 +13,6 @@ function QuestionPage({ initialData }) {
     const [activeStep, setActiveStep] = React.useState(0);
 
     let [questionCounter, setQuestionCounter] = useState(0)
-    const [result, setResult] = useState({ id: undefined, pollResult: [] })
 
 
     const handleNext = (e, id, index) => {

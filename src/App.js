@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import StartPage from './components/StartPage/StartPage'
 import QuestionPage from './components/QuestionPage/QuestionPage'
 import FarewellPage from './components/FarawellPage/FarewellPage'
@@ -6,6 +6,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 
 function App() {
+
+  const [result, setResult] = useState({ id: undefined, pollResult: [] })
+
 
   const initialData = {
     id: 1,
@@ -74,7 +77,8 @@ function App() {
           }
         ]
       }
-    ]
+    ],
+    result: {...result}
   }
 
   return (
@@ -84,7 +88,7 @@ function App() {
           <StartPage design_statics={initialData.design_statics} />
         </Route>
         <Route path="/Questions">
-          <QuestionPage initialData={initialData} />
+          <QuestionPage initialData={initialData} setResult={setResult} result={result} />
         </Route>
         <Route path="/Farewell">
           <FarewellPage initialData={initialData} />

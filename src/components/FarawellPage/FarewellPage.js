@@ -3,10 +3,11 @@ import { Container, Row, Col } from 'reactstrap'
 import './FarewellPage.scss'
 
 function FarewellPage({ initialData }) {
+    console.log(initialData.result)
     return (
         <>
             <div className="background">
-                <img alt="background placeholder" src={initialData.design_statics.background_url}/>
+                <img alt="background placeholder" src={initialData.design_statics.background_url} />
             </div>
             <Container className="FarewellPage">
                 <div className="farewell-page" >
@@ -42,14 +43,3 @@ function FarewellPage({ initialData }) {
 }
 
 export default FarewellPage
-
-
-
-{/* <>
-            <h1>result is:</h1>
-            {initialData.questions.map((question, index) => {
-                return (
-                    <p key={index}>{question.question_title} {result.pollResult[index]}</p>
-                )
-            })}
-        </> */}
