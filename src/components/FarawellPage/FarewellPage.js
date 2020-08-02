@@ -22,7 +22,7 @@ function FarewellPage({ initialData }) {
                         <Row className='d-md-flex justify-content-between'>
                             <Col xs={12} md={6}>
                                 <div className="footer-logo">
-                                    <img src={initialData.design_statics.logo_url} />
+                                    <img alt="logo placeholder" src={initialData.design_statics.logo_url} />
                                 </div>
                             </Col>
                             <Col xs={12} md={6}>
