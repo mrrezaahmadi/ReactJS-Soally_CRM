@@ -4,12 +4,16 @@ import './FarewellPage.scss'
 
 function FarewellPage({ initialData }) {
     return (
-        <Container className="FarewellPage">
-                <div className="farewell-page">
+        <>
+            <div className="background">
+                <img alt="background placeholder" src={initialData.design_statics.background_url}/>
+            </div>
+            <Container className="FarewellPage">
+                <div className="farewell-page" >
                     <section className="main mt-md-5">
                         <div className="farewell-page--title">با تشکر از وقتی که صرف پاسخگویی به سوالات کردید. </div>
                         <div className="logo d-none d-md-block mt-md-5">
-                            <img src={initialData.design_statics.logo_url} />
+                            <img alt="log placeholder" src={initialData.design_statics.logo_url} />
                         </div>
 
                     </section>
@@ -32,8 +36,8 @@ function FarewellPage({ initialData }) {
                         </Row>
                     </footer>
                 </div>
-        </Container>
-
+            </Container>
+        </>
     )
 }
 

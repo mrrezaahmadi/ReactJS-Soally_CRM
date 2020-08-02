@@ -31,7 +31,7 @@ const ColorlibConnector = withStyles({
 
 const useColorlibStepIconStyles = makeStyles({
     root: {
-        backgroundColor: '#ccc',
+        backgroundColor: '#e3e3e3',
         zIndex: 1,
         color: '#fff',
         width: 35,
@@ -105,7 +105,7 @@ function MyStepper(props) {
 
     return (
         <div className={classes.root}>
-            <Stepper alternativeLabel activeStep={activeStep} connector={<ColorlibConnector />}>
+            <Stepper alternativeLabel activeStep={activeStep} connector={<ColorlibConnector />} style={{ backgroundColor: 'transparent' }}>
                 {steps.map((label) => (
                     <Step key={label}>
                         <StepLabel StepIconComponent={ColorlibStepIcon}>{}</StepLabel>

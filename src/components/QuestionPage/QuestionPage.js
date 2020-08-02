@@ -32,6 +32,10 @@ function QuestionPage({ initialData }) {
 
 
     return (
+        <>
+        <div className="background">
+            <img alt="background placeholder" src={initialData.design_statics.background_url} />
+        </div>
         <Container>
             <div className="QuestionPage">
                 <header>
@@ -76,6 +80,7 @@ function QuestionPage({ initialData }) {
 
             </div>
         </Container>
+        </>
     )
 }
 

@@ -13,7 +13,7 @@ function App() {
     organization_name_fa: 'تپسی',
     design_statics: {
       logo_url: 'https://media-exp1.licdn.com/dms/image/C4D0BAQGru99VZdwbGw/company-logo_200_200/0?e=2159024400&v=beta&t=zejZRsZxJ0xgLz1K5-UzmoaaYoSDdqNz0-N8NoQUkRk',
-      background_url: 'something',
+      background_url: 'https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
     },
     MAX_QUESTION_NUMBER: 3,
     questions: [
@@ -81,7 +81,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <StartPage logo_url={initialData.design_statics.logo_url} />
+          <StartPage design_statics={initialData.design_statics} />
         </Route>
         <Route path="/Questions">
           <QuestionPage initialData={initialData} />
