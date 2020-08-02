@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "810014c9b23381760cf280b4a4e5bcf7",
+    "revision": "10e4995e33b36665a22b0841158480a3",
     "url": "/ReactJS-Soally_CRM/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactJS-Soally_CRM/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "8fca04e79b585aa9d82b",
-    "url": "/ReactJS-Soally_CRM/static/css/main.1ddcda11.chunk.css"
+    "revision": "a0c28cd0749bdab4b542",
+    "url": "/ReactJS-Soally_CRM/static/css/main.cde198d6.chunk.css"
   },
   {
     "revision": "a43f8aecb60e70081448",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactJS-Soally_CRM/static/js/2.b8494bca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8fca04e79b585aa9d82b",
-    "url": "/ReactJS-Soally_CRM/static/js/main.95337468.chunk.js"
+    "revision": "a0c28cd0749bdab4b542",
+    "url": "/ReactJS-Soally_CRM/static/js/main.cc1ff83f.chunk.js"
   },
   {
     "revision": "8340bd14efba1bca34e3",

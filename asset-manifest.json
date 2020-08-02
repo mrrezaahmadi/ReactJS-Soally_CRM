@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ReactJS-Soally_CRM/static/css/main.1ddcda11.chunk.css",
-    "main.js": "/ReactJS-Soally_CRM/static/js/main.95337468.chunk.js",
-    "main.js.map": "/ReactJS-Soally_CRM/static/js/main.95337468.chunk.js.map",
+    "main.css": "/ReactJS-Soally_CRM/static/css/main.cde198d6.chunk.css",
+    "main.js": "/ReactJS-Soally_CRM/static/js/main.cc1ff83f.chunk.js",
+    "main.js.map": "/ReactJS-Soally_CRM/static/js/main.cc1ff83f.chunk.js.map",
     "runtime-main.js": "/ReactJS-Soally_CRM/static/js/runtime-main.c95ce86a.js",
     "runtime-main.js.map": "/ReactJS-Soally_CRM/static/js/runtime-main.c95ce86a.js.map",
     "static/css/2.af3c1da9.chunk.css": "/ReactJS-Soally_CRM/static/css/2.af3c1da9.chunk.css",
     "static/js/2.b8494bca.chunk.js": "/ReactJS-Soally_CRM/static/js/2.b8494bca.chunk.js",
     "static/js/2.b8494bca.chunk.js.map": "/ReactJS-Soally_CRM/static/js/2.b8494bca.chunk.js.map",
     "index.html": "/ReactJS-Soally_CRM/index.html",
-    "precache-manifest.5c4b54450045ad018de15d0bd4a0d248.js": "/ReactJS-Soally_CRM/precache-manifest.5c4b54450045ad018de15d0bd4a0d248.js",
+    "precache-manifest.7668712effa0b021e4df20df754d1cc1.js": "/ReactJS-Soally_CRM/precache-manifest.7668712effa0b021e4df20df754d1cc1.js",
     "service-worker.js": "/ReactJS-Soally_CRM/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/ReactJS-Soally_CRM/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.1ddcda11.chunk.css.map": "/ReactJS-Soally_CRM/static/css/main.1ddcda11.chunk.css.map",
+    "static/css/main.cde198d6.chunk.css.map": "/ReactJS-Soally_CRM/static/css/main.cde198d6.chunk.css.map",
     "static/js/2.b8494bca.chunk.js.LICENSE.txt": "/ReactJS-Soally_CRM/static/js/2.b8494bca.chunk.js.LICENSE.txt",
     "static/media/FarewellPage.scss": "/ReactJS-Soally_CRM/static/media/YekanBakh-Regular.7296ae79.ttf"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.c95ce86a.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.b8494bca.chunk.js",
-    "static/css/main.1ddcda11.chunk.css",
-    "static/js/main.95337468.chunk.js"
+    "static/css/main.cde198d6.chunk.css",
+    "static/js/main.cc1ff83f.chunk.js"
   ]
 }
