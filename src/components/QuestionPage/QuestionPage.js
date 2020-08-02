@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import './QuestionPage.scss'
+import { Redirect } from 'react-router-dom'
 
 function QuestionPage({ initialData }) {
 
     let [questionCounter, setQuestionCounter] = useState(0)
-    const [result, setResult] = useState({ id: undefined, pollResult: [] })
+  const [result, setResult] = useState({ id: undefined, pollResult: [] })
+    
 
     const handleNext = (e, id, index) => {
         setResult({ id: id, pollResult: [...result.pollResult, e.target.textContent] })
@@ -26,14 +28,7 @@ function QuestionPage({ initialData }) {
             <div className="QuestionPage">
                 <header></header>
                 <section className="main">
-                    {questionCounter > initialData.MAX_QUESTION_NUMBER ? <>
-                        <h1>result is:</h1>
-                        {initialData.questions.map((question, index) => {
-                            return (
-                                <p key={index}>{question.question_title} {result.pollResult[index]}</p>
-                            )
-                        })}
-                    </> : <section className="question-page-main mt-md-5">
+                    {questionCounter > initialData.MAX_QUESTION_NUMBER ? <Redirect to="/Farewell"/> : <section className="question-page-main mt-md-5">
                             <div className="question-page-main--title">
                                 <p>{initialData.questions[questionCounter].question_title}</p>
                             </div>

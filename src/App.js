@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import StartPage from './components/StartPage/StartPage'
 import QuestionPage from './components/QuestionPage/QuestionPage'
-import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import FarewellPage from './components/FarawellPage/FarewellPage'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 
 function App() {
@@ -80,10 +81,13 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <StartPage />
+          <StartPage logo_url={initialData.design_statics.logo_url} />
         </Route>
         <Route path="/Questions">
           <QuestionPage initialData={initialData} />
+        </Route>
+        <Route path="/Farewell">
+          <FarewellPage initialData={initialData} />
         </Route>
       </Switch>
     </Router>

@@ -22,8 +22,10 @@
 	font-style: normal;
 }
 
-.StartPage {
-	.start-page {
+
+.FarewellPage {
+
+	.farewell-page {
 		position: relative;
 		min-height: 100vh;
 		border: 1px solid black;
@@ -34,7 +36,7 @@
 		direction: rtl;
 		padding: 0 30px;
 	}
-	.start-page--title {
+	.farewell-page--title {
 		text-align: center;
 		margin-top: 105px;
 		font-size: 30px;
@@ -49,35 +51,29 @@
 		align-items: center;
 	}
 
-	.start-page--button {
-		border: none;
-		margin-top: 90px;
+	footer {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		// align-items: space-between;
+		bottom: 0;
+		width: 100%;
+		height: 150px;
+	}
+
+	.footer-logo {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		// border: 10px
-		// 	linear-gradient(
-		// 		360deg,
-		// 		rgba(241, 151, 184, 1) 0%,
-		// 		rgba(237, 136, 104, 0.47) 100%
-		// 	)
-		// 	solid;
-		border-radius: 50px;
-		width: 203px;
-		height: 75px;
-		background: rgb(237, 134, 93);
-		background: linear-gradient(
-			360deg,
-			rgba(237, 134, 93, 1) 0%,
-			rgba(241, 151, 189, 1) 100%
-		);
-		font-size: 30px;
-		font-weight: bold;
-		color: white;
+		width: 100%;
+		height: 100%;
+		img {
+			width: 100px;
+			height: 50px;
+		}
 	}
-
-	.footer {
-		position: absolute;
+	.question-page-footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
