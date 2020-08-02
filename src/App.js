@@ -1,26 +1,92 @@
 import React from 'react';
-import { Button, Container } from 'reactstrap'
-import './App.scss'
+import StartPage from './components/StartPage/StartPage'
+import QuestionPage from './components/QuestionPage/QuestionPage'
+import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 
 function App() {
+
+  const initialData = {
+    id: 1,
+    organization_name: 'Tap30',
+    organization_name_fa: 'تپسی',
+    design_statics: {
+      logo_url: 'https://media-exp1.licdn.com/dms/image/C4D0BAQGru99VZdwbGw/company-logo_200_200/0?e=2159024400&v=beta&t=zejZRsZxJ0xgLz1K5-UzmoaaYoSDdqNz0-N8NoQUkRk',
+      background_url: 'something',
+    },
+    MAX_QUESTION_NUMBER: 3,
+    questions: [
+      {
+        question_title: 'حالت چطوره؟',
+        options: [
+          {
+            option_number: 1,
+            option: 'خوبه'
+          }, {
+            option_number: 2,
+            option: 'بد نیستم'
+          }, {
+            option_number: 3,
+            option: "هی میگذره"
+          }
+        ]
+      }, {
+        question_title: 'آیا از زمان انتظار برای پیدا شدن سفیر تپ‌سی راضی هستید؟ ',
+        options: [
+          {
+            option_number: 1,
+            option: 'راضی ام'
+          }, {
+            option_number: 2,
+            option: 'نه ولی اوکیه'
+          }, {
+            option_number: 3,
+            option: 'آشغاله'
+          }
+        ]
+      }, {
+        question_title: 'مشکل چی بود؟',
+        options: [
+          {
+            option_number: 1,
+            option: 'کولر نداشت'
+          }, {
+            option_number: 2,
+            option: 'صدای موسیقی زیاد بود'
+          }, {
+            option_number: 3,
+            option: 'چی بگم والا!'
+          }
+        ]
+      }, {
+        question_title: 'میخوای بری؟',
+        options: [
+          {
+            option_number: 1,
+            option: 'اره'
+          }, {
+            option_number: 2,
+            option: 'نه'
+          }, {
+            option_number: 3,
+            option: 'به تو چه!'
+          }
+        ]
+      }
+    ]
+  }
+
   return (
-    <Container>
-      <div className="start-page">
-        <section className="main">
-          <div className="start-page--title">فرم نظرسنجی و ارتقا سطح خدمت رسانی </div>
-          <div className="logo">logo placeholder</div>
-          <button className="start-page--button">شروع</button>
-        </section>
-        <footer className="footer">
-          <div className="footer-header">
-            <div className="footer-header--title">قدرت گرفته از</div>
-            <button className='footer-header--title--logo'>Soally</button>
-          </div>
-          <div className="footer--subtitle">پلتفرم طراحی فرم‌های CRM</div>
-        </footer>
-      </div>
-    </Container>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <StartPage />
+        </Route>
+        <Route path="/Questions">
+          <QuestionPage initialData={initialData} />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
