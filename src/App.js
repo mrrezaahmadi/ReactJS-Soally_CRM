@@ -84,14 +84,14 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <StartPage design_statics={initialData.design_statics} />
-        </Route>
-        <Route path="/Questions">
+        <Route exact path="/Questions">
           <QuestionPage initialData={initialData} setResult={setResult} result={result} />
         </Route>
-        <Route path="/Farewell">
+        <Route exact path="/Farewell">
           <FarewellPage initialData={initialData} />
+        </Route>
+        <Route path="/">
+          <StartPage design_statics={initialData.design_statics} />
         </Route>
       </Switch>
     </Router>

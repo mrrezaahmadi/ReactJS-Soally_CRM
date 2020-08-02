@@ -17,7 +17,7 @@ function StartPage({ design_statics }) {
                             <img alt="logo placeholder" src={design_statics.logo_url} />
                         </div>
 
-                        <Link to="/Questions">
+                        <Link style={{textDecoration: 'none'}} to="/Questions">
                             <button className="start-page--button">شروع</button>
                         </Link>
                     </section>

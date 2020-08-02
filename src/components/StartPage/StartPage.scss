@@ -73,13 +73,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		// border: 10px
-		// 	linear-gradient(
-		// 		360deg,
-		// 		rgba(241, 151, 184, 1) 0%,
-		// 		rgba(237, 136, 104, 0.47) 100%
-		// 	)
-		// 	solid;
 		border-radius: 50px;
 		width: 203px;
 		height: 75px;
@@ -92,6 +85,16 @@
 		font-size: 30px;
 		font-weight: bold;
 		color: white;
+		outline: none;
+		&:hover {
+			background: rgb(202, 66, 112);
+			background: linear-gradient(
+				360deg,
+				rgb(237, 215, 93) 0%,
+				rgb(216, 116, 86) 100%
+			);
+			color: black;
+		}
 	}
 
 	.footer {
