@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from './redux/store.config'
 import StartPage from './components/StartPage/StartPage'
 import QuestionPage from './components/QuestionPage/QuestionPage'
 import FarewellPage from './components/FarawellPage/FarewellPage'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 
 function App() {
@@ -78,23 +80,25 @@ function App() {
         ]
       }
     ],
-    result: {...result}
+    result: { ...result }
   }
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/Questions">
-          <QuestionPage initialData={initialData} setResult={setResult} result={result} />
-        </Route>
-        <Route exact path="/Farewell">
-          <FarewellPage initialData={initialData} />
-        </Route>
-        <Route path="/">
-          <StartPage design_statics={initialData.design_statics} />
-        </Route>
-      </Switch>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Switch>
+          <Route exact path="/Questions">
+            <QuestionPage initialData={initialData} />
+          </Route>
+          <Route exact path="/Farewell">
+            <FarewellPage initialData={initialData} />
+          </Route>
+          <Route path="/">
+            <StartPage design_statics={initialData.design_statics} />
+          </Route>
+        </Switch>
+      </Router>
+    </Provider>
   );
 }
 

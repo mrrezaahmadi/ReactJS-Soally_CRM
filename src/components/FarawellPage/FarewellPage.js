@@ -1,9 +1,10 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import './FarewellPage.scss'
+import {connect} from 'react-redux'
 
-function FarewellPage({ initialData }) {
-    console.log(initialData.result)
+function FarewellPage({ initialData, result }) {
+    console.log(result)
     return (
         <>
             <div className="background">
@@ -42,4 +43,10 @@ function FarewellPage({ initialData }) {
     )
 }
 
-export default FarewellPage
+const mapStateToProps = state => {
+    return {
+        result: state.soally.result
+    }
+}
+
+export default connect(mapStateToProps)(FarewellPage)

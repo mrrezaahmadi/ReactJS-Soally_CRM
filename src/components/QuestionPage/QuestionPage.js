@@ -3,20 +3,24 @@ import { Container, Row, Col } from 'reactstrap'
 import './QuestionPage.scss'
 import { Redirect } from 'react-router-dom'
 import MyStepper from '../Stepper/Stepper'
+import { connect } from 'react-redux'
+import { setResult } from '../../redux/soally/soally.actions'
 
-function QuestionPage({ initialData, setResult, result }) {
+function QuestionPage({ initialData, setResult }) {
 
     function getSteps() {
         return initialData.questions.map(question => '');
     }
 
-    const [activeStep, setActiveStep] = React.useState(0);
+    // console.log(setResult, initialData, "boom")
+    const [activeStep, setActiveStep] = useState(0);
 
     let [questionCounter, setQuestionCounter] = useState(0)
 
 
     const handleNext = (e, id, index) => {
-        setResult({ id: id, pollResult: [...result.pollResult, e.target.textContent] })
+        // setResult({ id: id, pollResult: [...result.pollResult, e.target.textContent] })
+        setResult({ text: e.target.textContent, id })
 
         document.querySelector(`#option${index}`).classList.add('active')
 
@@ -83,4 +87,11 @@ function QuestionPage({ initialData, setResult, result }) {
     )
 }
 
-export default QuestionPage
+const mapStateToProps = state => {
+    return {
+        result: state.soally.result
+    }
+}
+
+
+export default connect(mapStateToProps, { setResult })(QuestionPage)
