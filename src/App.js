@@ -19,20 +19,20 @@ function App() {
       logo_url: 'https://media-exp1.licdn.com/dms/image/C4D0BAQGru99VZdwbGw/company-logo_200_200/0?e=2159024400&v=beta&t=zejZRsZxJ0xgLz1K5-UzmoaaYoSDdqNz0-N8NoQUkRk',
       background_url: 'https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
     },
-    MAX_QUESTION_NUMBER: 3,
+    MAX_QUESTION_NUMBER: 4,
     questions: [
       {
-        question_title: 'حالت چطوره؟',
+        question_title: 'از خدمات راضی هستید؟',
         options: [
           {
             option_number: 1,
             option: 'خوبه'
           }, {
             option_number: 2,
-            option: 'بد نیستم'
+            option: 'بد نیست'
           }, {
             option_number: 3,
-            option: "هی میگذره"
+            option: "نه!!!"
           }
         ]
       }, {
@@ -64,7 +64,18 @@ function App() {
           }
         ]
       }, {
-        question_title: 'میخوای بری؟',
+        question_title: 'ایا به موقع سرویس رسانی شد؟',
+        options: [
+          {
+            option_number: 1,
+            option: 'اره'
+          }, {
+            option_number: 2,
+            option: 'نه'
+          }
+        ]
+      }, {
+        question_title: 'نظافت عمومی رعایت شده بود؟',
         options: [
           {
             option_number: 1,
@@ -74,7 +85,7 @@ function App() {
             option: 'نه'
           }, {
             option_number: 3,
-            option: 'به تو چه!'
+            option: 'اصلا حرفشو نزن'
           }
         ]
       }
