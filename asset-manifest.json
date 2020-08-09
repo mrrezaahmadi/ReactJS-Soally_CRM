@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/ReactJS-Soally_CRM/static/css/main.08edcf3e.chunk.css",
-    "main.js": "/ReactJS-Soally_CRM/static/js/main.cc1ff83f.chunk.js",
-    "main.js.map": "/ReactJS-Soally_CRM/static/js/main.cc1ff83f.chunk.js.map",
+    "main.js": "/ReactJS-Soally_CRM/static/js/main.fa6d8bff.chunk.js",
+    "main.js.map": "/ReactJS-Soally_CRM/static/js/main.fa6d8bff.chunk.js.map",
     "runtime-main.js": "/ReactJS-Soally_CRM/static/js/runtime-main.c95ce86a.js",
     "runtime-main.js.map": "/ReactJS-Soally_CRM/static/js/runtime-main.c95ce86a.js.map",
     "static/css/2.af3c1da9.chunk.css": "/ReactJS-Soally_CRM/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.b8494bca.chunk.js": "/ReactJS-Soally_CRM/static/js/2.b8494bca.chunk.js",
-    "static/js/2.b8494bca.chunk.js.map": "/ReactJS-Soally_CRM/static/js/2.b8494bca.chunk.js.map",
+    "static/js/2.5545145d.chunk.js": "/ReactJS-Soally_CRM/static/js/2.5545145d.chunk.js",
+    "static/js/2.5545145d.chunk.js.map": "/ReactJS-Soally_CRM/static/js/2.5545145d.chunk.js.map",
     "index.html": "/ReactJS-Soally_CRM/index.html",
-    "precache-manifest.a87ef48646609b1a008afbef8fabe2b1.js": "/ReactJS-Soally_CRM/precache-manifest.a87ef48646609b1a008afbef8fabe2b1.js",
+    "precache-manifest.03ad1eaffbd47783e1208217e1003f60.js": "/ReactJS-Soally_CRM/precache-manifest.03ad1eaffbd47783e1208217e1003f60.js",
     "service-worker.js": "/ReactJS-Soally_CRM/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/ReactJS-Soally_CRM/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.08edcf3e.chunk.css.map": "/ReactJS-Soally_CRM/static/css/main.08edcf3e.chunk.css.map",
-    "static/js/2.b8494bca.chunk.js.LICENSE.txt": "/ReactJS-Soally_CRM/static/js/2.b8494bca.chunk.js.LICENSE.txt",
+    "static/js/2.5545145d.chunk.js.LICENSE.txt": "/ReactJS-Soally_CRM/static/js/2.5545145d.chunk.js.LICENSE.txt",
     "static/media/FarewellPage.scss": "/ReactJS-Soally_CRM/static/media/YekanBakh-Regular.7296ae79.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.c95ce86a.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.b8494bca.chunk.js",
+    "static/js/2.5545145d.chunk.js",
     "static/css/main.08edcf3e.chunk.css",
-    "static/js/main.cc1ff83f.chunk.js"
+    "static/js/main.fa6d8bff.chunk.js"
   ]
 }

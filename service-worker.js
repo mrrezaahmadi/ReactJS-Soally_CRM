@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ReactJS-Soally_CRM/precache-manifest.a87ef48646609b1a008afbef8fabe2b1.js"
+  "/ReactJS-Soally_CRM/precache-manifest.03ad1eaffbd47783e1208217e1003f60.js"
 );
 
 self.addEventListener('message', (event) => {
